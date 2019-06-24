@@ -1,14 +1,11 @@
 const request = require('./service')
-const { decodeUnicode, encodeUnicode } = require('./tools')
-
-const pinyin = require('tiny-pinyin')
 
 const _ = require('lodash')
 const cheerio = require('cheerio')
 
 async function getWeather(provience, city) {
   const { data } = await request({
-    url: `https://tianqi.moji.com/weather/china/${pinyin.convertToPinyin(provience)}/${pinyin.convertToPinyin(city)}`,
+    url: `https://tianqi.moji.com/weather/china/${provience}/${city}`,
     isSpider: true,
   })
   const $ = cheerio.load(data, {

@@ -17,8 +17,9 @@ app.get('/weather', async function(req, res){
       result: data,
     });
   } catch (error) {
+    console.log(error, 'err');
     res.json({
-      reason: error.message,
+      reason: 'error',
       error_code: 1,
       result: null,
     });
