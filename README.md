@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> 自用爬虫小工具
+> 自用爬虫小工具(配合微信机器人使用)
 
 ## Install
 
@@ -20,7 +20,8 @@ npm run test
 ## Feature
 
 ```
-目前就写了一个天气的爬虫（墨迹天气
+一个天气的爬虫（墨迹天气
+垃圾分类查询(
 
 todo（想找个可以爬取的暖心情话的数据，求推荐
 ```
