@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { getWeather } = require('./src/weather');
+const getWeather = require('./src/api/weather');
 
 const app = express();
 
@@ -24,8 +24,12 @@ app.get('/weather', async function(req, res){
       result: null,
     });
   }
-
 });
+
+app.get('/qiubai', async function() {
+  console.log(req.query);
+
+})
 
 app.listen(port, () => {
   console.log(`this server is starting on localhost:${port}`)

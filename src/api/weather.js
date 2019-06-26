@@ -1,4 +1,4 @@
-const request = require('./service')
+const request = require('../service')
 
 const _ = require('lodash')
 const cheerio = require('cheerio')
@@ -63,7 +63,4 @@ async function getWeather(provience, city) {
 
 // getWeather() 
 
-module.exports = {
-  getWeather: getWeather,
-}
-
+module.exports = getWeather;
